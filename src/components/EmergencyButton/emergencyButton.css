@@ -1,0 +1,8 @@
+.emergencyBtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background:#fff;
+    font-weight: 700;
+    cursor: pointer;
+}
