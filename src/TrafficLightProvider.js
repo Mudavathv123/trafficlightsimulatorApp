@@ -3,9 +3,9 @@ import { createContext, useReducer, useContext } from 'react';
 const TrafficLightContext = createContext();
 
 const initialState = {
-  currentLight: 'green', // Green, Yellow, Red
+  currentLight: 'green', 
   pedestrianRequested: false,
-  timer: { green: 10, yellow: 3, red: 7 }, // Seconds for each light
+  timer: { green: 10, yellow: 3, red: 7 }, 
 };
 
 const trafficLightReducer = (state, action) => {

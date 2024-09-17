@@ -25,7 +25,7 @@ const LightController = () => {
         setTimeout(() => {
           dispatch({ type: 'CHANGE_LIGHT', payload: 'green' });
           dispatch({ type: 'REQUEST_CROSSING', payload: false });
-        }, 5000); // Extra 5 seconds for pedestrians
+        }, 5000); 
       } else {
         dispatch({ type: 'CHANGE_LIGHT', payload: nextLight });
       }
@@ -34,7 +34,7 @@ const LightController = () => {
     const interval = setInterval(handleLightChange, state.timer[state.currentLight] * 1000);
 
     return () => clearInterval(interval);
-  }, [state.currentLight, state.pedestrianRequested]);
+  }, [dispatch, state.timer,state.currentLight, state.pedestrianRequested]);
 
   return null;
 };

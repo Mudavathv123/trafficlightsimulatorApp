@@ -8,7 +8,7 @@ const PedestrianButton = () => {
     dispatch({ type: 'REQUEST_CROSSING' });
   };
 
-  return <button onClick={requestCrossing} >Pedestrian Crossing</button>;
-};
+  return <button onClick={requestCrossing} className='requestBtn' >Pedestrian Crossing</button>;
 
+};
 export default PedestrianButton;

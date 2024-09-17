@@ -5,10 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../public/roads.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #282c34;
 }
 
 .btn-container {
